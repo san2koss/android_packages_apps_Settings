@@ -12,8 +12,6 @@ package com.android.settings.lineagepro;
 
 import android.content.Context;
 import android.os.SystemProperties;
-import android.text.TextUtils;
-
 import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -64,7 +62,6 @@ public class LineageProPropertyPreferenceController extends AbstractPreferenceCo
         } else if (mType == TYPE_TEXT && preference instanceof EditTextPreference) {
             final EditTextPreference editTextPreference = (EditTextPreference) preference;
             editTextPreference.setText(value);
-            editTextPreference.setSummary(getTextSummary(value));
         } else if (mType == TYPE_LIST && preference instanceof ListPreference) {
             final ListPreference listPreference = (ListPreference) preference;
             listPreference.setValue(value);
@@ -83,9 +80,7 @@ public class LineageProPropertyPreferenceController extends AbstractPreferenceCo
 
         SystemProperties.set(mPropertyKey, value);
 
-        if (mType == TYPE_TEXT) {
-            preference.setSummary(getTextSummary(value));
-        } else if (mType == TYPE_LIST && preference instanceof ListPreference) {
+        if (mType == TYPE_LIST && preference instanceof ListPreference) {
             final ListPreference listPreference = (ListPreference) preference;
             final int index = listPreference.findIndexOfValue(value);
             if (index >= 0) {
@@ -107,9 +102,5 @@ public class LineageProPropertyPreferenceController extends AbstractPreferenceCo
 
     private boolean parseBoolean(String value) {
         return "1".equals(value) || "true".equalsIgnoreCase(value);
-    }
-
-    private String getTextSummary(String value) {
-        return TextUtils.isEmpty(value) ? "" : value;
     }
 }
