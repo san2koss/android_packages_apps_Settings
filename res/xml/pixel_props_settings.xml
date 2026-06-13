@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 The LineageOS Project -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/spoofing_pixel_props_title">
+
+    <SwitchPreferenceCompat
+        android:key="pp_enabled"
+        android:title="@string/spoofing_pixel_props_title"
+        android:summary="@string/spoofing_pixel_props_summary" />
+
+    <ListPreference
+        android:key="pp_model"
+        android:title="@string/pp_spoof_as" />
+
+    <Preference
+        android:key="pp_refresh_profiles"
+        android:title="@string/pp_refresh_profiles"
+        android:summary="@string/pp_refresh_profiles_summary" />
+
+    <SwitchPreferenceCompat
+        android:key="pp_show_system"
+        android:title="@string/show_system_apps"
+        android:summary="@string/show_system_apps_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="pp_select_all"
+        android:title="@string/action_select_all"
+        android:summary="@string/pp_select_all_summary" />
+
+    <Preference
+        android:key="pp_reset"
+        android:title="@string/action_reset"
+        android:summary="@string/pp_reset_summary" />
+
+    <PreferenceCategory
+        android:key="pp_targets_category"
+        android:title="@string/ts_no_targets" />
+</PreferenceScreen>

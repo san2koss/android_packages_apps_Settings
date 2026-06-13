@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 The LineageOS Project -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/lineagepro_misc_title">
+
+    <PreferenceCategory
+        android:key="lineagepro_misc_attestation_category"
+        android:title="@string/lineagepro_attestation_category_title">
+
+        <SwitchPreferenceCompat
+            android:key="pi_enable_spoof"
+            android:title="@string/pi_spoof_title"
+            android:summary="@string/pi_spoof_summary" />
+
+        <SwitchPreferenceCompat
+            android:key="persist.sys.vbmeta.update"
+            android:title="@string/vbmeta_attestation_title"
+            android:summary="@string/vbmeta_attestation_summary" />
+
+        <SwitchPreferenceCompat
+            android:key="pi_gms_cert_chain"
+            android:title="@string/pi_gmscertchain_title"
+            android:summary="@string/pi_gmscertchain_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lineagepro_misc_app_spoof_category"
+        android:title="@string/lineagepro_app_spoof_category_title">
+
+        <SwitchPreferenceCompat
+            android:key="pi_games_spoof"
+            android:title="@string/use_games_spoof_title"
+            android:summary="@string/use_games_spoof_summary" />
+
+        <SwitchPreferenceCompat
+            android:key="pi_photos_spoof"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary" />
+
+        <SwitchPreferenceCompat
+            android:key="pi_netflix_spoof"
+            android:title="@string/netflix_spoof_title"
+            android:summary="@string/netflix_spoof_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

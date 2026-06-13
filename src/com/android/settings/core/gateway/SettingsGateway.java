@@ -120,6 +120,17 @@ import com.android.settings.inputmethod.SpellCheckersSettings;
 import com.android.settings.inputmethod.UserDictionaryList;
 import com.android.settings.inputmethod.UserDictionarySettings;
 import com.android.settings.language.LanguageAndInputSettings;
+import com.android.settings.language.LanguageAndRegionSettings;
+import com.android.settings.language.LanguageSettings;
+import com.android.settings.lineagepro.GameSpoofing;
+import com.android.settings.lineagepro.LineageProMiscSettings;
+import com.android.settings.lineagepro.LineageProSettings;
+import com.android.settings.lineagepro.LineageProSpoofingSettings;
+import com.android.settings.lineagepro.PlayIntegrityFix;
+import com.android.settings.lineagepro.PixelPropsSettings;
+import com.android.settings.lineagepro.TrickyStore;
+import com.android.settings.lineagepro.TrickyStoreAppSettings;
+import com.android.settings.localepicker.AppLocalePickerFragment;
 import com.android.settings.localepicker.LocaleListEditor;
 import com.android.settings.location.LocationServices;
 import com.android.settings.location.LocationSettings;
@@ -209,6 +220,14 @@ public class SettingsGateway {
             UserDictionaryList.class.getName(),
             UserDictionarySettings.class.getName(),
             DisplaySettings.class.getName(),
+            LineageProMiscSettings.class.getName(),
+            LineageProSettings.class.getName(),
+            LineageProSpoofingSettings.class.getName(),
+            PlayIntegrityFix.class.getName(),
+            PixelPropsSettings.class.getName(),
+            TrickyStore.class.getName(),
+            TrickyStoreAppSettings.class.getName(),
+            GameSpoofing.class.getName(),
             MyDeviceInfoFragment.class.getName(),
             ModuleLicensesDashboard.class.getName(),
             ManageApplications.class.getName(),

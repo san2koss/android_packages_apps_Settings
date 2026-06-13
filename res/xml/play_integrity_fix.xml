@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 The LineageOS Project -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/play_integrity_fix_title">
+
+    <PreferenceCategory
+        android:key="pif_status_category"
+        android:title="@string/pif_status">
+
+        <Preference
+            android:key="pif_active_config"
+            android:title="@string/pif_active_config"
+            android:summary="@string/pif_no_config"
+            android:selectable="false" />
+
+        <Preference
+            android:key="pif_fetch_beta"
+            android:title="@string/pif_fetch_pixel_beta"
+            android:summary="@string/pif_fetch_pixel_beta_summary" />
+
+        <Preference
+            android:key="pif_import_config"
+            android:title="@string/pif_import_config"
+            android:summary="@string/pif_import_config_summary" />
+
+        <Preference
+            android:key="pif_delete_config"
+            android:title="@string/pif_delete_config"
+            android:summary="@string/pif_delete_config_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pif_config_details_category"
+        android:title="@string/pif_config_details" />
+</PreferenceScreen>

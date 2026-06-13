@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 The LineageOS Project -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/spoofing_title">
+
+    <PreferenceCategory
+        android:key="spoofing_feature_pages_category"
+        android:title="@string/lineagepro_feature_pages_category_title">
+
+        <Preference
+            android:key="pixel_props_settings"
+            android:title="@string/spoofing_pixel_props_title"
+            android:summary="@string/spoofing_pixel_props_summary"
+            android:fragment="com.android.settings.lineagepro.PixelPropsSettings" />
+
+        <Preference
+            android:key="play_integrity_fix"
+            android:title="@string/play_integrity_fix_title"
+            android:summary="@string/play_integrity_fix_summary"
+            android:fragment="com.android.settings.lineagepro.PlayIntegrityFix" />
+
+        <Preference
+            android:key="tricky_store"
+            android:title="@string/tricky_store_title"
+            android:summary="@string/tricky_store_summary"
+            android:fragment="com.android.settings.lineagepro.TrickyStore" />
+
+        <Preference
+            android:key="game_spoofing"
+            android:title="@string/game_spoofing_title"
+            android:summary="@string/game_spoofing_summary"
+            android:fragment="com.android.settings.lineagepro.GameSpoofing" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="spoofing_system_wide_category"
+        android:title="@string/spoofing_system_wide_category">
+
+        <SwitchPreferenceCompat
+            android:key="pi_tensor_spoof"
+            android:title="@string/tensor_spoof_title"
+            android:summary="@string/tensor_spoof_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="spoofing_app_specific_category"
+        android:title="@string/spoofing_app_specific_category">
+
+        <SwitchPreferenceCompat
+            android:key="pi_photos_spoof"
+            android:title="@string/spoofing_photos_title"
+            android:summary="@string/spoofing_photos_summary" />
+
+        <SwitchPreferenceCompat
+            android:key="pi_snapchat_spoof"
+            android:title="@string/spoofing_snap_title"
+            android:summary="@string/spoofing_snap_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

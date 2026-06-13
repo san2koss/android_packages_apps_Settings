@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 The LineageOS Project -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/game_spoofing_title">
+
+    <SwitchPreferenceCompat
+        android:key="gs_enabled"
+        android:title="@string/gs_enable"
+        android:summary="@string/gs_enable_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="gs_add_game"
+        android:title="@string/gs_add_app"
+        android:summary="@string/gs_add_app_summary"
+        android:dependency="gs_enabled" />
+
+    <Preference
+        android:key="gs_reload"
+        android:title="@string/gs_reload"
+        android:summary="@string/gs_reload_summary"
+        android:dependency="gs_enabled" />
+
+    <PreferenceCategory
+        android:key="gs_games_category"
+        android:title="@string/gs_configured_apps"
+        android:dependency="gs_enabled" />
+</PreferenceScreen>

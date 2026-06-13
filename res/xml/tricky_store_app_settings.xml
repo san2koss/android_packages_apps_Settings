@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 The LineageOS Project -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/ts_manage_target_apps">
+
+    <SwitchPreferenceCompat
+        android:key="ts_show_system_apps"
+        android:title="@string/show_system_apps"
+        android:summary="@string/show_system_apps_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="ts_select_all"
+        android:title="@string/action_select_all"
+        android:summary="@string/ts_select_all_summary" />
+
+    <Preference
+        android:key="ts_add_installed"
+        android:title="@string/action_add_installed"
+        android:summary="@string/ts_add_installed_summary" />
+
+    <Preference
+        android:key="ts_reset_targets"
+        android:title="@string/action_reset"
+        android:summary="@string/ts_reset_targets_summary" />
+
+    <PreferenceCategory
+        android:key="ts_apps_category"
+        android:title="@string/ts_no_targets" />
+</PreferenceScreen>
