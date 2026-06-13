@@ -12,17 +12,23 @@ package com.android.settings.lineagepro;
 
 import android.content.Context;
 import android.os.SystemProperties;
+import android.util.Log;
+import android.widget.Toast;
+
 import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
 
+import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 
 public class LineageProPropertyPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
+
+    private static final String TAG = "LineageProProperty";
 
     public static final int TYPE_SWITCH = 0;
     public static final int TYPE_TEXT = 1;
@@ -78,7 +84,14 @@ public class LineageProPropertyPreferenceController extends AbstractPreferenceCo
             value = String.valueOf(newValue);
         }
 
-        SystemProperties.set(mPropertyKey, value);
+        try {
+            SystemProperties.set(mPropertyKey, value);
+        } catch (RuntimeException e) {
+            Log.e(TAG, "Failed to set system property " + mPropertyKey, e);
+            Toast.makeText(mContext, R.string.lineagepro_property_write_failed,
+                    Toast.LENGTH_SHORT).show();
+            return false;
+        }
 
         if (mType == TYPE_LIST && preference instanceof ListPreference) {
             final ListPreference listPreference = (ListPreference) preference;

@@ -10,21 +10,17 @@
         android:title="@string/lineagepro_feature_pages_category_title">
 
         <Preference
-            android:key="lineagepro_misc_page"
-            android:title="@string/lineagepro_misc_title"
-            android:summary="@string/lineagepro_misc_summary"
-            android:fragment="com.android.settings.lineagepro.LineageProMiscSettings" />
-
-        <Preference
             android:key="lineagepro_spoofing_page"
             android:title="@string/spoofing_title"
             android:summary="@string/spoofing_summary"
+            settings:iconSpaceReserved="false"
             android:fragment="com.android.settings.lineagepro.LineageProSpoofingSettings" />
 
         <Preference
             android:key="play_integrity_fix"
             android:title="@string/play_integrity_fix_title"
             android:summary="@string/play_integrity_fix_summary"
+            settings:iconSpaceReserved="false"
             android:fragment="com.android.settings.lineagepro.PlayIntegrityFix" />
     </PreferenceCategory>
 
@@ -32,33 +28,38 @@
         android:key="lineagepro_fake_sim_category"
         android:title="@string/lineagepro_fake_sim_category_title">
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:key="lineagepro_fake_sim_enabled"
             android:title="@string/lineagepro_fake_sim_enabled_title"
-            android:summary="@string/lineagepro_fake_sim_enabled_summary" />
+            android:summary="@string/lineagepro_fake_sim_enabled_summary"
+            settings:iconSpaceReserved="false" />
 
         <EditTextPreference
             android:key="lineagepro_fake_sim_operator_name"
             android:title="@string/lineagepro_fake_sim_operator_name_title"
             android:dialogTitle="@string/lineagepro_fake_sim_operator_name_title"
+            settings:iconSpaceReserved="false"
             settings:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:key="lineagepro_fake_sim_operator_numeric"
             android:title="@string/lineagepro_fake_sim_operator_numeric_title"
             android:dialogTitle="@string/lineagepro_fake_sim_operator_numeric_title"
+            settings:iconSpaceReserved="false"
             settings:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:key="lineagepro_fake_sim_country_iso"
             android:title="@string/lineagepro_fake_sim_country_iso_title"
             android:dialogTitle="@string/lineagepro_fake_sim_country_iso_title"
+            settings:iconSpaceReserved="false"
             settings:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:key="lineagepro_fake_sim_iccid"
             android:title="@string/lineagepro_fake_sim_iccid_title"
             android:dialogTitle="@string/lineagepro_fake_sim_iccid_title"
+            settings:iconSpaceReserved="false"
             settings:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
@@ -66,44 +67,51 @@
         android:key="lineagepro_virtual_camera_category"
         android:title="@string/lineagepro_virtual_camera_category_title">
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:key="lineagepro_virtual_camera_enabled"
             android:title="@string/lineagepro_virtual_camera_enabled_title"
-            android:summary="@string/lineagepro_virtual_camera_enabled_summary" />
+            android:summary="@string/lineagepro_virtual_camera_enabled_summary"
+            settings:iconSpaceReserved="false" />
 
         <ListPreference
             android:key="lineagepro_virtual_camera_mode"
             android:title="@string/lineagepro_virtual_camera_mode_title"
             android:entries="@array/lineagepro_virtual_camera_mode_entries"
-            android:entryValues="@array/lineagepro_virtual_camera_mode_values" />
+            android:entryValues="@array/lineagepro_virtual_camera_mode_values"
+            settings:iconSpaceReserved="false" />
 
         <EditTextPreference
             android:key="lineagepro_virtual_camera_path"
             android:title="@string/lineagepro_virtual_camera_path_title"
             android:dialogTitle="@string/lineagepro_virtual_camera_path_title"
+            settings:iconSpaceReserved="false"
             settings:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:key="lineagepro_virtual_camera_width"
             android:title="@string/lineagepro_virtual_camera_width_title"
             android:dialogTitle="@string/lineagepro_virtual_camera_width_title"
+            settings:iconSpaceReserved="false"
             settings:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
             android:key="lineagepro_virtual_camera_height"
             android:title="@string/lineagepro_virtual_camera_height_title"
             android:dialogTitle="@string/lineagepro_virtual_camera_height_title"
+            settings:iconSpaceReserved="false"
             settings:useSimpleSummaryProvider="true" />
 
         <ListPreference
             android:key="lineagepro_virtual_camera_format"
             android:title="@string/lineagepro_virtual_camera_format_title"
             android:entries="@array/lineagepro_virtual_camera_format_entries"
-            android:entryValues="@array/lineagepro_virtual_camera_format_values" />
+            android:entryValues="@array/lineagepro_virtual_camera_format_values"
+            settings:iconSpaceReserved="false" />
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:key="lineagepro_virtual_camera_loop"
             android:title="@string/lineagepro_virtual_camera_loop_title"
-            android:summary="@string/lineagepro_virtual_camera_loop_summary" />
+            android:summary="@string/lineagepro_virtual_camera_loop_summary"
+            settings:iconSpaceReserved="false" />
     </PreferenceCategory>
 </PreferenceScreen>

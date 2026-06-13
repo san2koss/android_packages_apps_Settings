@@ -14554,6 +14554,7 @@
     <!-- LineagePro settings -->
     <string name="lineagepro_settings_title">LineagePro</string>
     <string name="lineagepro_settings_summary">ROM feature controls</string>
+    <string name="lineagepro_property_write_failed">Failed to save property</string>
     <string name="lineagepro_feature_pages_category_title">Feature pages</string>
     <string name="lineagepro_misc_title">Miscellaneous</string>
     <string name="lineagepro_misc_summary">Play Integrity, VBMeta, and app spoof toggles</string>

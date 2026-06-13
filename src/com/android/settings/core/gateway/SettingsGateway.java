@@ -121,7 +121,6 @@ import com.android.settings.inputmethod.UserDictionaryList;
 import com.android.settings.inputmethod.UserDictionarySettings;
 import com.android.settings.language.LanguageAndInputSettings;
 import com.android.settings.lineagepro.GameSpoofing;
-import com.android.settings.lineagepro.LineageProMiscSettings;
 import com.android.settings.lineagepro.LineageProSettings;
 import com.android.settings.lineagepro.LineageProSpoofingSettings;
 import com.android.settings.lineagepro.PlayIntegrityFix;
@@ -217,7 +216,6 @@ public class SettingsGateway {
             UserDictionaryList.class.getName(),
             UserDictionarySettings.class.getName(),
             DisplaySettings.class.getName(),
-            LineageProMiscSettings.class.getName(),
             LineageProSettings.class.getName(),
             LineageProSpoofingSettings.class.getName(),
             PlayIntegrityFix.class.getName(),
