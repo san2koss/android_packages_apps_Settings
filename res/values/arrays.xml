@@ -1659,10 +1659,41 @@
     <integer-array name="network_mode_3g_deprecated_carrier_id" translatable="false">
     </integer-array>
 
+    <!-- LineagePro virtual camera modes. -->
+    <string-array name="lineagepro_virtual_camera_mode_entries">
+        <item>Pattern</item>
+        <item>Raw file</item>
+    </string-array>
+
+    <!-- Do not translate. -->
+    <string-array name="lineagepro_virtual_camera_mode_values" translatable="false">
+        <item>pattern</item>
+        <item>raw</item>
+    </string-array>
+
+    <!-- LineagePro virtual camera raw formats. -->
+    <string-array name="lineagepro_virtual_camera_format_entries">
+        <item>RGBA</item>
+        <item>Gray</item>
+    </string-array>
+
+    <!-- Do not translate. -->
+    <string-array name="lineagepro_virtual_camera_format_values" translatable="false">
+        <item>rgba</item>
+        <item>gray</item>
+    </string-array>
+
     <!-- LineagePro TrickyStore target modes. -->
     <string-array name="ts_target_mode_entries">
         <item>@string/ts_target_mode_auto</item>
         <item>@string/ts_target_mode_leaf</item>
         <item>@string/ts_target_mode_cert</item>
+    </string-array>
+
+    <!-- Do not translate. -->
+    <string-array name="ts_target_mode_values" translatable="false">
+        <item>auto</item>
+        <item>leaf</item>
+        <item>cert</item>
     </string-array>
 </resources>
