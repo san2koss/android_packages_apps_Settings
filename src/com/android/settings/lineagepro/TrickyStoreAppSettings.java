@@ -14,6 +14,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -264,8 +265,8 @@ public class TrickyStoreAppSettings extends SettingsPreferenceFragment {
             if (leftTargeted != rightTargeted) {
                 return leftTargeted ? -1 : 1;
             }
-            return getAppLabel(left).toLowerCase(Locale.ROOT)
-                    .compareTo(getAppLabel(right).toLowerCase(Locale.ROOT));
+            return getAppLabel(left).toString().toLowerCase(Locale.ROOT)
+                    .compareTo(getAppLabel(right).toString().toLowerCase(Locale.ROOT));
         });
         return apps;
     }

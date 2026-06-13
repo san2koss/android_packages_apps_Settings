@@ -13,9 +13,6 @@ package com.android.settings.lineagepro;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -127,8 +124,4 @@ public class LineageProSettings extends DashboardFragment {
                 }
             };
 
-    @Override
-    public @Nullable String getPreferenceScreenBindingKey(@NonNull Context context) {
-        return null;
-    }
 }

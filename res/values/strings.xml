@@ -14626,6 +14626,7 @@
     <string name="ts_keybox_installed">Keybox installed</string>
     <string name="ts_keybox_imported">Keybox imported successfully</string>
     <string name="ts_delete_keybox">Delete keybox</string>
+    <string name="ts_delete">Delete</string>
     <string name="ts_delete_keybox_summary">Remove keybox data</string>
     <string name="ts_delete_keybox_title">Delete keybox?</string>
     <string name="ts_delete_keybox_message">The keybox data will be permanently removed.</string>
