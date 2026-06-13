@@ -32,6 +32,7 @@
             android:key="lineagepro_fake_sim_enabled"
             android:title="@string/lineagepro_fake_sim_enabled_title"
             android:summary="@string/lineagepro_fake_sim_enabled_summary"
+            settings:allowDividerAbove="true"
             settings:iconSpaceReserved="false" />
 
         <EditTextPreference
@@ -71,6 +72,7 @@
             android:key="lineagepro_virtual_camera_enabled"
             android:title="@string/lineagepro_virtual_camera_enabled_title"
             android:summary="@string/lineagepro_virtual_camera_enabled_summary"
+            settings:allowDividerAbove="true"
             settings:iconSpaceReserved="false" />
 
         <ListPreference
@@ -112,6 +114,7 @@
             android:key="lineagepro_virtual_camera_loop"
             android:title="@string/lineagepro_virtual_camera_loop_title"
             android:summary="@string/lineagepro_virtual_camera_loop_summary"
+            settings:allowDividerAbove="true"
             settings:iconSpaceReserved="false" />
     </PreferenceCategory>
 </PreferenceScreen>

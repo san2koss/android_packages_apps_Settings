@@ -60,6 +60,15 @@
         settings:highlightableMenuKey="@string/menu_key_apps"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.lineagepro.LineageProSettings"
+        android:icon="@drawable/ic_settings_lineagepro"
+        android:key="top_level_lineagepro"
+        android:order="-15"
+        android:title="@string/lineagepro_settings_title"
+        android:summary="@string/lineagepro_settings_summary"
+        settings:highlightableMenuKey="@string/menu_key_system"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
         android:icon="@drawable/ic_notifications"
         android:key="top_level_notifications"
@@ -192,15 +201,6 @@
         android:order="10"
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_system"/>
-
-    <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.lineagepro.LineageProSettings"
-        android:icon="@drawable/ic_settings_system_dashboard_white"
-        android:key="top_level_lineagepro"
-        android:order="-15"
-        android:title="@string/lineagepro_settings_title"
-        android:summary="@string/lineagepro_settings_summary"
         settings:highlightableMenuKey="@string/menu_key_system"/>
 
     <com.android.settings.widget.HomepagePreference

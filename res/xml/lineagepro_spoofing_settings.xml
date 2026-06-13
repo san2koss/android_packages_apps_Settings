@@ -38,24 +38,30 @@
         android:key="spoofing_system_wide_category"
         android:title="@string/spoofing_system_wide_category">
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:key="pi_tensor_spoof"
             android:title="@string/tensor_spoof_title"
-            android:summary="@string/tensor_spoof_summary" />
+            android:summary="@string/tensor_spoof_summary"
+            settings:allowDividerAbove="true"
+            settings:iconSpaceReserved="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="spoofing_app_specific_category"
         android:title="@string/spoofing_app_specific_category">
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:key="pi_photos_spoof"
             android:title="@string/spoofing_photos_title"
-            android:summary="@string/spoofing_photos_summary" />
+            android:summary="@string/spoofing_photos_summary"
+            settings:allowDividerAbove="true"
+            settings:iconSpaceReserved="false" />
 
-        <SwitchPreferenceCompat
+        <SwitchPreference
             android:key="pi_snapchat_spoof"
             android:title="@string/spoofing_snap_title"
-            android:summary="@string/spoofing_snap_summary" />
+            android:summary="@string/spoofing_snap_summary"
+            settings:allowDividerAbove="true"
+            settings:iconSpaceReserved="false" />
     </PreferenceCategory>
 </PreferenceScreen>
